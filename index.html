@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0a0612" />
+  <meta name="description" content="Назек кешіресіңбе? 🫶" />
+  <title>Назек кешіресіңбе? 🫶</title>
+
+  <!-- Distinctive fonts: Unbounded (display) + Manrope (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated gradient background + glow blobs -->
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- Floating hearts layer (filled by JS) -->
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <!-- Main glass card -->
+  <main class="stage">
+    <section class="card" id="card">
+      <span class="card__badge">💌 арнайы хабарлама</span>
+
+      <h1 class="title" id="title">
+        Назек<br />
+        <span class="title__accent">кешіресіңбе?</span>
+        <span class="title__emoji">🫶</span>
+      </h1>
+
+      <p class="subtitle" id="subtitle">бір ғана дұрыс жауап бар…</p>
+
+      <div class="buttons" id="buttons">
+        <button class="btn btn--yes" id="yesBtn" type="button">
+          <span class="btn__shine"></span>
+          Иә <span class="btn__emoji">💖</span>
+        </button>
+
+        <button class="btn btn--no" id="noBtn" type="button">
+          Жоқ <span class="btn__emoji">😭</span>
+        </button>
+      </div>
+
+      <p class="hint" id="hint">* «Жоқ» батырмасын басып көрші 😉</p>
+    </section>
+  </main>
+
+  <!-- Final celebration overlay -->
+  <div class="finale" id="finale" aria-hidden="true">
+    <div class="finale__glow"></div>
+    <canvas id="confetti" class="confetti"></canvas>
+    <div class="finale__content">
+      <div class="finale__emoji">🫶</div>
+      <h2 class="finale__text">ой, отдуши<span>🫶</span></h2>
+      <p class="finale__sub">білем ғой жақсы көретініңді 💖</p>
+      <button class="finale__again" id="againBtn" type="button">тағы бір рет ↻</button>
+    </div>
+  </div>
+
+  <footer class="footer">made with 💖</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
